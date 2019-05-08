@@ -15,7 +15,7 @@ def recparsehelp(s, outfile):
 
 def parseBusinessData():
     # read the JSON file
-    with open('../../JSONfiles/yelp_business.JSON','r') as f:
+    with open('./yelp_business.JSON','r') as f:
         outfile =  open('business.txt', 'w')
         line = f.readline()
         count_line = 0
@@ -48,7 +48,7 @@ def parseBusinessData():
 
 def parseUserData():
     # read the JSON file
-    with open('../../JSONfiles/yelp_user.JSON','r') as f:
+    with open('./yelp_user.JSON','r') as f:
         outfile = open('user.txt', 'w')
         line = f.readline()
         count_line = 0
@@ -75,7 +75,7 @@ def parseUserData():
 
 def parseCheckinData():
     # read the JSON file
-    with open('../../JSONfiles/yelp_checkin.JSON','r') as f:
+    with open('./yelp_checkin.JSON','r') as f:
         outfile =  open('checkin.txt', 'w')
         line = f.readline()
         count_line = 0
@@ -94,7 +94,7 @@ def parseCheckinData():
 
 def parseReviewData():
     # read the JSON file
-    with open('../../JSONfiles/yelp_review.JSON','r') as f:
+    with open('./yelp_review.JSON','r') as f:
         outfile =  open('review.txt', 'w')
         line = f.readline()
         count_line = 0
